@@ -1,20 +1,8 @@
-const numarr = [1, 2, 3, 4];
-/* // console.log(typeof numarr);
+const namearr = ['민철', '영수', '영희', '민수'];
 
-//배열의 길이 알아보기 : .length
-// console.log(numarr.length);
-const arr = [];
-arr[2] = 3;
-console.log(arr); */
-// 원본 배열을 직접 건드리는 방식
-numarr.push(5, 6);
-// console.log(numarr); 
-
-// 원본 내열을 직접 건드리지 않는 방식
-/* const result = numarr.concat(7, 8);
-console.log(result);
-console.log(numarr);
- */
-
- numarr.pop();
- console.log(numarr);
+//foreach
+namearr.forEach (name => console.log(`내 이름은 ${name}이야`));
+//map
+const oddarr = [1, 3, 5, 7, 9];
+const newarr = oddarr.map( num => num*2 );
+console.log(newarr);
